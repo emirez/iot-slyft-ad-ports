@@ -1,0 +1,6 @@
+{
+  "c_define_prefix": "tut1",
+  "c_identifier_prefix": "TUT1",
+  "source_file_extension": "cpp",
+  "debug": true
+}

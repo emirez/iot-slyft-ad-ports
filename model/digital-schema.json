@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "digital",
+    "title": "Digital Ports",
+    "description": "Digital Port Definitions",
+    "type": "object",
+    "properties" : {
+    "port" : {
+          "type": "string",
+          "maxLength": 2,
+          "description": "The port name will be given as DX."
+        },
+    "value" : {
+          "type": "integer",
+          "description": "The value will be written on DX."
+        }
+    },
+    "required": ["port"]
+}

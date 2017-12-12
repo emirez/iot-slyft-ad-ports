@@ -1,0 +1,20 @@
+#%RAML 0.8
+title: coapled
+baseUri: coap://api.sylft.io/
+version: 0.1
+schemas:
+  - digital: digital-schema.json
+/digital:
+  post:
+    description: Update device configuration
+    body:
+      application/x-msgpack:
+        schema: digital
+    responses:
+      205:
+        description: Changed device configuration
+        body:
+          application/x-msgpack:
+            schema: digital
+      406:
+        description: Configuration request not acceptable
